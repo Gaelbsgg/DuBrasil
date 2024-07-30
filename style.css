@@ -8,10 +8,11 @@
     text-transform: capitalize;
     transition: 0.2s linear;
     font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
-    --main-color: #d3ad7f;
+    --main-color: #1E90FF;
     --black: #13131a;
     --bg: #010103;
     --border: 0.1rem solid rgba(255, 255, 255, 0.3);
@@ -138,44 +139,102 @@ header .section-top {
     text-transform: uppercase;
 }
 
-/* HOME CONTAINER */
+/* TGA CONTAINER */
 
-.home-container section {
+.tga-container section {
     display: flex;
     align-items: center;
     min-height: 100vh;
 }
 
-.home-container {
-    background: url(img/backgorund-historia.jpg);
+.tga-container {
+    background-color: rgb(4, 155, 219);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8aGTiSvzxtO7sDLPInzPnlAMk7Z8ai7jBY5kZVPtXOHPCvRDBXd-J59CgCR1hmGqh2nc&usqp=CAU);
     height: 100vh;
-    background-position: center;
-    background-size: cover;
+    background-position: 88% 50%;
+    background-repeat: no-repeat;
 }
 
 .content {
     max-width: 60rem;
 }
 
-.content h2 {
-    color: var(--main-color);
+.tga-container .content h2 {
+    color: #fff;
     font-size: 8rem;
 }
 
-.content span {
-    color: #fff;
+.tga-container .content span {
+    color: #010103;
 }
 
-.content p {
-    color: #fff;
-    font-size: 2rem;
+.tga-container .content p {
+    color: #010103;
+    font-size: 3rem;
     font-weight: 100;
     line-height: 1.8;
     padding: 1rem 0;
 }
 
-/* END HOME CONTAINER */
+.tga-container .content .btn {
+    background-color: var(--black);
+    color: var(--main-color);
+}
 
+.tga-container .content .btn:hover {
+    background-color: #fff;
+    color: var(--bg);
+}
+
+/* END TGA CONTAINER */
+/* SECULLUM CONTAINER */
+
+.secullum-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.secullum-container {
+    background-color: #fff;
+    background-image: url(https://yt3.googleusercontent.com/0VC_JBWfsOV6Arc1_JeugrrSRN0zTnFMJCe6Q6y56jO3OeG6J4ndiJ2i-XtmYmF7DnukunT6zko=s900-c-k-c0x00ffffff-no-rj);
+    background-position: 90% 45%;
+    background-repeat: no-repeat;
+    background-size: 27rem 27rem;
+}
+
+.content {
+    max-width: 60rem;
+}
+
+.secullum-container .content h2 {
+    color: rgb(250, 198, 7);
+    font-size: 8rem;
+}
+
+.secullum-container .content span {
+    color: var(--black);
+}
+
+.secullum-container .content p {
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.secullum-container .content .btn {
+    background-color: rgb(250, 198, 7);
+    color: var(--bg);
+}
+
+.secullum-container .content .btn:hover {
+    background-color: var(--bg);
+    color: rgb(250, 198, 7);
+}
+
+/* END SECULLUM CONTAINER */
 /* SOBRE CONTAINER */
 
 .sobre .row {
@@ -204,12 +263,13 @@ header .section-top {
     padding: 1rem 0;
     line-height: 1.8;
 }
+
 /* END SOBRE CONTAINER */
 /* BOX CONTAINER */
 
 .produtos .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
