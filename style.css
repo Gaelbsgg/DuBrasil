@@ -130,13 +130,11 @@ header .section-top {
     font-size: 4rem;
     color: var(--main-color);
     text-align: center;
-    text-transform: uppercase;
     margin-bottom: 2rem;
 }
 
 .title span {
     color: #fff;
-    text-transform: uppercase;
 }
 
 /* SOBRE CONTAINER */
