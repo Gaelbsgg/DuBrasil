@@ -139,6 +139,56 @@ header .section-top {
     text-transform: uppercase;
 }
 
+/* SOBRE CONTAINER */
+
+.sobre-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.sobre-container {
+    background-color: #13131a(4, 155, 219);
+    background-image: url(https://dubrasilsolucoes.com.br/wp-content/uploads/2020/10/logo-dubrasil-rodape-3.png);
+    height: 100vh;
+    background-position: 88% 50%;
+    background-repeat: no-repeat;
+}
+
+.content {
+    max-width: 60rem;
+}
+
+.sobre-container .content h2 {
+    color: #1E90FF;
+    font-size: 8rem;
+}
+
+.sobre-container .content .span-sobre {
+    color: #fff;
+}
+
+.sobre-container .content p {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.sobre-container .content .btn {
+    background-color: var(--black);
+    color: var(--main-color);
+}
+
+.tga-container .content .btn:hover {
+    background-color: #fff;
+    color: var(--bg);
+}
+
+/* END SOBRE CONTAINER */
+
+
 /* TGA CONTAINER */
 
 .tga-container section {
@@ -159,13 +209,13 @@ header .section-top {
     max-width: 60rem;
 }
 
-.tga-container .content h2 {
-    color: #fff;
+.tga-container .content h2{
+    color: #010103;
     font-size: 8rem;
 }
 
-.tga-container .content span {
-    color: #010103;
+.tga-container .content .span-tga {
+    color: #fff;
 }
 
 .tga-container .content p {
@@ -212,7 +262,7 @@ header .section-top {
     font-size: 8rem;
 }
 
-.secullum-container .content span {
+.secullum-container .content .span-secullum {
     color: var(--black);
 }
 
@@ -235,37 +285,8 @@ header .section-top {
 }
 
 /* END SECULLUM CONTAINER */
-/* SOBRE CONTAINER */
 
-.sobre .row {
-    display: flex;
-    align-items: center;
-    background-color: var(--black);
-    gap: 1.5rem;
-}
-
-.container-image {
-    padding: 10rem;
-}
-
-.sobre .row .content {
-    padding: 2rem;
-}
-
-.sobre .row h3 {
-    font-size: 3rem;
-    color: #fff;
-}
-
-.sobre .row .content p {
-    font-size: 1.6rem;
-    color: #fff;
-    padding: 1rem 0;
-    line-height: 1.8;
-}
-
-/* END SOBRE CONTAINER */
-/* BOX CONTAINER */
+ /* PRODUTOS CONTAINER  */
 
 .produtos .box-container {
     display: grid;
@@ -309,3 +330,37 @@ header .section-top {
 .produtos .box-container .box:hover>* {
     color: var(--black);
 }
+
+/* END PRODUTOS CONTAINER */
+
+/* BACKUP
+ SOBRE CONTAINER
+
+.sobre .row {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.5rem;
+}
+
+.container-image {
+    padding: 10rem;
+}
+
+.sobre .row .content {
+    padding: 2rem;
+}
+
+.sobre .row h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.sobre .row .content p {
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/* END SOBRE CONTAINER */
